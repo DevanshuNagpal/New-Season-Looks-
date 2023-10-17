@@ -1,0 +1,7 @@
+.Section1{
+    background-image: url("../Assets/bg.png");
+    width: 100%;
+    height: max-content;
+    background-size: cover;
+    background-position: center;
+}
