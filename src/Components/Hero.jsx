@@ -1,6 +1,5 @@
 import React from 'react';
 import froont from '../Assets/froont.png';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 const Hero = () => {
   return (
@@ -12,8 +11,7 @@ const Hero = () => {
         <p className="text-[#51abc8]">LOOKS</p>
       </div>
 
-      <BsArrowLeft className="absolute hidden md:block left-4 md:left-16 text-3xl  md:text-5xl text-[#a5a5a5]" />
-      <BsArrowRight className="absolute  hidden md:block right-4 md:right-16 text-3xl  md:text-5xl text-[#a5a5a5] " />
+      
 
       <img src={froont} alt="front" className=" md:mx-auto" />
     </div>

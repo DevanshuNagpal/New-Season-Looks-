@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row gap-2">
               <h1 className="text-gray-600 hover:text-2xl duration-200 gap-2"><Link to='/'>Home</Link></h1>
               <h1 className="text-gray-600 hover:text-2xl duration-200 gap-2"><Link to='/Collections'>About</Link></h1>
-              <h1 className="text-gray-600 hover:text-2xl duration-200 gap-2"><Link to='/'>Contact</Link></h1>
+              <h1 className="text-gray-600 hover:text-2xl duration-200 gap-2"><Link to="/ContactUs">ContactUs</Link></h1>
             </div>
             <div className="text-gray-600">
               Image rights belong to their respective owners.
@@ -25,9 +25,12 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center sm:items-end">
           <div className="flex gap-4 mb-4">
-            <FontAwesomeIcon icon={faPinterestP} className="text-gray-600 hover:scale-125 transform transition-transform duration-500" />
-            <FontAwesomeIcon icon={faFacebookF} className="text-gray-600 hover:scale-125 transform transition-transform duration-500" />
-            <FontAwesomeIcon icon={faTwitter} className="text-gray-600 hover:scale-125 transform transition-transform duration-500" />
+          <a href="https://www.pinterest.com">
+            <FontAwesomeIcon icon={faPinterestP} className="text-gray-600 hover:scale-125 transform transition-transform duration-500"/></a>
+            <a href="https://www.facebook.com">
+            <FontAwesomeIcon icon={faFacebookF} className="text-gray-600 hover:scale-125 transform transition-transform duration-500" /></a>
+            <a href="https://www.twitter.com">
+            <FontAwesomeIcon icon={faTwitter} className="text-gray-600 hover:scale-125 transform transition-transform duration-500" /></a>
           </div>
           <form className="flex flex-col sm:flex-row gap-2 items-center sm:items-end">
             <input
@@ -38,7 +41,7 @@ const Footer = () => {
               className="p-2 mb-2 sm:mb-0 border border-gray-400 rounded"
             />
             <button className="p-2 bg-pink-500 text-white font-bold rounded hover:bg-pink-600 transition duration-300">
-              Subscribe
+            <Link to='/'>Subscribe</Link>
             </button>
           </form>
         </div>

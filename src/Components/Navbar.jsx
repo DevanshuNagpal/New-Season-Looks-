@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
+import { AiOutlineMenu,AiOutlineClose,AiTwotoneHome} from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { BsFillCartFill ,BsPersonHearts} from "react-icons/bs";
 import { MdFavorite,MdCollectionsBookmark } from "react-icons/md";
-import { CgLogOut} from "react-icons/cg";
+import { PiSignInBold} from "react-icons/pi";
+import { BiSupport} from "react-icons/bi";
+
+
 // import { FaHandsHelping} from "react-icons/fa";
 import avatar from '../Assets/avatar.jpg'
 import { Link } from "react-router-dom";
@@ -12,6 +15,8 @@ const Navbar = () => {
     const [nav,setNav] = useState(false)
 
   return (
+    
+
     <div className="  flex justify-between items-center h-25 max-w-[1640px] mx-auto px-4 bg-[#F9EDEC] text-purple-900 p-5 font-source-code-pro font-bold ">
       {/* Left Nav */}
       <div className="flex items-center">
@@ -47,17 +52,21 @@ const Navbar = () => {
 
 <nav>
     <ul className="flex flex-col  p-4 text-purple-900  ">
-    <li className="text-xl py-4 flex items-center cursor-pointer"><CgLogOut className="m-4" size={20}/><Link to = '/'>Home</Link></li>
+    <li className="text-xl py-4 flex items-center cursor-pointer"><AiTwotoneHome className="m-4" size={20}/><Link to = '/'>Home</Link></li>
 
           <li className="text-xl py-4 flex items-center  cursor-pointer"><MdFavorite className="m-4" size={20}/><Link to="/Trends">Trends</Link></li>
           <li className="text-xl py-4 flex items-center cursor-pointer"><MdCollectionsBookmark className="m-4" size={20}/><Link to="/Collections">Collections</Link></li>
           <li className="text-xl py-4 flex items-center cursor-pointer"><BsPersonHearts className="m-4" size={20}/><Link to="/Designers">Designers</Link></li>
+          <li className="text-xl py-4 flex items-center cursor-pointer"><PiSignInBold className="m-4" size={20}/><Link to="/SignUp">SignUp</Link></li>
+          <li className="text-xl py-4 flex items-center cursor-pointer"><BiSupport className="m-4" size={20}/><Link to="/ContactUs">ContactUs</Link></li>
+
           {/* <li className="text-xl py-4 flex items-center cursor-pointer"><FaHandsHelping className="m-4" size={20}/><Link to="/Footer">Contact Us</Link></li> */}
     </ul>
 </nav>
 
         </div>
     </div>
+    
 
 
   );

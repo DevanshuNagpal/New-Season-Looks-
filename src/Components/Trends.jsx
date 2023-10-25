@@ -2,6 +2,8 @@ import React from "react";
 import model11 from "../Assets/model11.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Link } from 'react-router-dom';
+
 
 const Trends = () => {
   return (
@@ -36,7 +38,7 @@ const Trends = () => {
               className="btn bg-[#51abc8] text-white hover:bg-[#d13a6b] border-none"
               id="submit-btn"
             >
-              MORE
+              <Link to="/collections">MORE</Link>
             </button>
           </div>
         </div>
